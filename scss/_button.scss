@@ -1,0 +1,13 @@
+.button {
+    width: 10em;
+    height: 2.8em;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-image: linear-gradient(to right, $primaryColor, $secondaryColor);
+
+    &:hover {
+        filter: opacity(70%);
+        cursor: pointer;
+    }
+}

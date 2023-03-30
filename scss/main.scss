@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Public Sans";
+}
+
+$primaryColor: hsl(136, 65%, 51%);
+$secondaryColor: hsl(192, 70%, 51%);
+$tertiaryColor: hsl(233, 26%, 24%);
+
+$textColor: hsl(233, 8%, 62%);
+
+$primaryBgColor: hsl(0, 0%, 98%);
+$secondaryBgColor: hsl(220, 16%, 96%);
+
+@import "button";
+@import "header";
+@import "section1";
+@import "section2";

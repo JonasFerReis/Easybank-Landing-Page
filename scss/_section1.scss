@@ -1,0 +1,51 @@
+.section1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "txt img";
+
+    overflow: hidden;
+    background-color: aqua;
+
+    &__textDiv { 
+        grid-area: "txt";
+        width: 68%;
+        height: fit-content;
+        margin: 20% 20%;
+
+        h1 {
+            font-size: max(3.5vw, 24px);
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: $tertiaryColor;
+        }
+        
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: $textColor;
+        }
+    }
+
+    &__imageDiv {
+        grid-area: "img";
+        position: relative;
+        width: 155%;
+        height: fit-content;
+        top: -25%;
+        left: -4%;
+    }
+
+    &__bgImage {
+        width: 100%;
+    }
+
+    &__mockupImage {
+        position: absolute;
+        width: 63%; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-57%, -40%);
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "easybank-landing-page-master",
+  "description": "![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.html",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/main.css"
+  },
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}

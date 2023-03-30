@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Public Sans";
+}
+
+.button {
+  width: 10em;
+  height: 2.8em;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+.button:hover {
+  filter: opacity(70%);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+  font-weight: 300;
+  background-color: white;
+}
+.header__img {
+  width: 139px;
+  height: 20px;
+}
+.header__nav {
+  display: flex;
+  gap: 20px;
+  font-size: min(16px, 2.5vw);
+}
+.header__nav a {
+  color: hsl(233, 8%, 62%);
+}
+
+.section1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "txt img";
+  overflow: hidden;
+  background-color: aqua;
+}
+.section1__textDiv {
+  grid-area: "txt";
+  width: 68%;
+  height: fit-content;
+  margin: 20% 20%;
+}
+.section1__textDiv h1 {
+  font-size: max(3.5vw, 24px);
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: hsl(233, 26%, 24%);
+}
+.section1__textDiv p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: hsl(233, 8%, 62%);
+}
+.section1__imageDiv {
+  grid-area: "img";
+  position: relative;
+  width: 155%;
+  height: fit-content;
+  top: -25%;
+  left: -4%;
+}
+.section1__bgImage {
+  width: 100%;
+}
+.section1__mockupImage {
+  position: absolute;
+  width: 63%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-57%, -40%);
+}
+
+.section2 {
+  background-color: brown;
+}
+
+/*# sourceMappingURL=main.css.map */
