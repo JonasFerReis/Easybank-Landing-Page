@@ -1,43 +1,35 @@
-.section2 {
-    margin-top: -10%;
+.section3 {
     padding-top: 5em;
     padding-bottom: 5em;
-    background-color: $secondaryBgColor;
-
-    &__container {
-        width: 80%;
-        margin: auto;
-    }
+    background-color: $primaryBgColor;
 
     &__title {
-        margin-bottom: 0.5em;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1em;
         font-size: 35px;
         font-weight: 400;
         color: $tertiaryColor;
     }
-    
-    &__text {
-        margin-bottom: 3em;
-        color: $textColor;
-    }
-    
-    &__cardContainer {
+
+    &__articleContainer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 3em 1em;
+        width: 80%;
+        margin: auto;
     }
 }
 
 @media screen and (max-width: 650px) {
-    .section2 {
-        margin-top: initial;
+    .section3 {
 
-        &__container {
+        &__title {
             text-align: center;
         }
 
-        &__cardContainer {
+        &__articleContainer {
             justify-content: center;
         }
     }

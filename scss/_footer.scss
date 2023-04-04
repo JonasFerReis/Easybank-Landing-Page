@@ -1,0 +1,106 @@
+.footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: $tertiaryColor;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3em 2em;
+        width: 80%;
+        margin: auto;
+    }
+
+    &__imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 6em;
+    } 
+
+    &__social {
+        display: flex;
+        gap: 10px;
+        
+        img {
+            
+            &:hover {
+                filter: invert(62%) sepia(98%) saturate(390%) hue-rotate(80deg) brightness(250%) contrast(85%);
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+        gap: 8em;
+
+        height: 6em;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    
+    &__linkList {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        a {
+            color: white;
+
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-grow: 3;
+        height: 6em;
+        font-size: 12px;
+        color: $textColor;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        &__content {
+            flex-direction: column;
+            gap: 1.5em;
+        }
+
+        &__imgs {
+            justify-content: flex-start;
+            gap: 1.5em;
+            height: auto;
+        }
+
+        &__logo {
+            width: 8em;
+            margin: auto;
+        }
+
+        &__links {
+            flex-direction: column;
+            flex-grow: 0;
+            gap: 0.5em;
+            height: auto;
+            text-align: center;
+        }
+
+        &__linkList {
+            gap: 0.5em;
+        }
+
+        &__button {
+            align-items: center;
+            flex-grow: 0;
+        }
+    }
+}

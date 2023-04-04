@@ -1,0 +1,17 @@
+.card {
+    width: 15em;
+
+    &__title {
+        margin-top: 1.5em;
+        font-size: 22px;
+        font-weight: 400;
+        color: $tertiaryColor;
+    }
+    
+    &__text {
+        margin-top: 1.5em;
+        font-size: 15px;
+        line-height: 1.5em;
+        color: $textColor;
+    }
+}

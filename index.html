@@ -12,51 +12,162 @@
 
 <body>
     <header class = "header">
-        <img class = "header__img" src="./images/logo.svg" alt="logo-easybank">
-        <nav class = "header__nav">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-        </nav>
-        <button class = "button">Request Invite</button>
+        <div class = "header__content">
+            <img class = "header__logo" src="./images/logo.svg" alt="logo-easybank">
+            <nav class = "header__nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+            </nav>
+            <button class = "button header__button">Request Invite</button>
+            <img class = "header__hamburger" src="./images/icon-hamburger.svg" alt="icon-navbar">
+        </div>
+        <dialog class = "header__fade header__fade--hidden">
+            <div class = "header__modal">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+            </div>
+        </dialog>
     </header>
 
     <main>
         <section class = "section1">
-            <div class = "section1__textDiv">
-                <h1>Next generation digital banking</h1>
-                <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
-                for spending, saving, budgeting, investing, and much more.</p>
-                <button class = "button">Request Invite</button>
+            <div class = "section1__container">
+                <div class = "section1__textDiv">
+                    <h1 class = "section1__title">Next generation digital banking</h1>
+                    <p class = "section1__text">
+                        Take your financial life online. Your Easybank account swill be a one-stop-shop 
+                        for spending, saving, budgeting, investing, and much more.
+                    </p>
+                    <button class = "button">Request Invite</button>
+                </div>
             </div>
-            <div class = "section1__imageDiv">
-                <img class = "section1__bgImage" src="./images/bg-intro-desktop.svg" alt="bg-intro-desktop">
-                <img class = "section1__mockupImage" src="./images/image-mockups.png" alt="image-mockups">
+
+            <div class = "section1__container">
+                <div class = "section1__imageDiv">
+                    <img class = "section1__bgImage" src="./images/bg-intro-desktop.svg" alt="bg-intro-desktop">
+                    <img class = "section1__mockupImage" src="./images/image-mockups.png" alt="image-mockups">
+                </div>
             </div>
         </section>
 
         <section class = "section2">
-            <div>
-                <h2>Why choose Easybank?</h2>
-                <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
-                your finances like never before.</p>
+            <div class = "section2__container">
+                <h2 class = "section2__title">Why choose Easybank?</h2>
+                <p class = "section2__text">
+                    We leverage Open Banking to turn your bank account into your financial hub.<br>
+                    Control your finances like never before.
+                </p>
+                <div class = "section2__cardContainer">
+                    <div class = "card">
+                        <img class = "card__img" src="./images/icon-online.svg" alt="icon-online">
+                        <h3 class = "card__title">Online Banking</h3>
+                        <p class = "card__text">Our modern web and mobile applications allow you to keep track of your finances 
+                        wherever you are in the world.</p>
+                    </div>
+                    <div class = "card">
+                        <img class = "card__img" src="./images/icon-budgeting.svg" alt="icon-budgeting">
+                        <h3 class = "card__title">Simple Budgeting</h3>
+                        <p class = "card__text">See exactly where your money goes each month. Receive notifications when you’re 
+                        close to hitting your limits.
+                        </p>
+                    </div>
+                    <div class = "card">
+                        <img class = "card__img" src="./images/icon-onboarding.svg" alt="icon-onborading">
+                        <h3 class = "card__title">Fast Onboarding</h3>
+                        <p class = "card__text">We don't do branches. Open your account in minutes online and start taking control 
+                        of your finances right away</p>
+                    </div>
+                    <div class = "card">
+                        <img class = "card__img" src="./images/icon-api.svg" alt="icon-api">
+                        <h3 class = "card__title">Open API</h3>
+                        <p class = "card__text">Manage your savings, investments, pension, and much more from one account. Tracking 
+                        your money has never been easier.</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div>
-                <div>
-                    <img src="./images/icon-online.svg" alt="">
-                    <h3>Online Banking</h3>
-                    <p>Our modern web and mobile applications allow you to keep track of your finances 
-                    wherever you are in the world.</p>
+        <section class = "section3">
+            <h3 class = "section3__title">Latest Articles</h3>
+            <div class = "section3__articleContainer">
+                <div class = "article">
+                    <img class = "article__img" src="./images/image-currency.jpg" alt="image-currency">
+                    <div>
+                        <p class = "article__author">By Claire Robinson</p>
+                        <h3 class = "article__title">Receive money in any currency with no fees</h3>
+                        <p class = "article__text">The world is getting smaller and we’re becoming more mobile. So why should you be 
+                        forced to only receive money in a single ...</p>
+                    </div>
+                </div>
+                <div class = "article">
+                    <img class = "article__img" src="./images/image-restaurant.jpg" alt="image-currency">
+                    <div>
+                        <p class = "article__author">By Wilson Hutton</p>
+                        <h3 class = "article__title">Treat yourself without worrying about money</h3>
+                        <p class = "article__text">Our simple budgeting feature allows you to separate out your spending and set 
+                        realistic limits each month. That means you ...</p>
+                    </div>
+                </div>
+                <div class = "article">
+                    <img class = "article__img" src="./images/image-plane.jpg" alt="image-currency">
+                    <div>
+                        <p class = "article__author">By Wilson Hutton</p>
+                        <h3 class = "article__title">Take your Easybank card wherever you go</h3>
+                        <p class = "article__text">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+                            while you’re abroad. We’ll even show you ...</p>
+                    </div>
+                </div>
+                <div class = "article">
+                    <img class = "article__img" src="./images/image-confetti.jpg" alt="image-currency">
+                    <div>
+                        <p class = "article__author">By Claire Robinson</p>
+                        <h3 class = "article__title">Our invite-only Beta accounts are now live!</h3>
+                        <p class = "article__text">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+                            It’s easy to request an invite through the site ...</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-
+    <footer class = "footer">
+        <div class = "footer__content">
+            <div class = "footer__imgs">
+                <img class = "footer__logo" src="./images/logo2.svg" alt="logo">
+                <div class = "footer__social">
+                    <a href="#"><img src="./images/icon-facebook.svg" alt="icon-facebook"></a>
+                    <a href="#"><img src="./images/icon-youtube.svg" alt="icon-youtube"></a>
+                    <a href="#"><img src="./images/icon-twitter.svg" alt="icon-twitter"></a>
+                    <a href="#"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></a>
+                    <a href="#"><img src="./images/icon-instagram.svg" alt="icon-instagram"></a>
+                </div>
+            </div>
+            <div class = "footer__links">
+                <div class = "footer__linkList">
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact</a>
+                    <a href = "#">Blog</a>
+                </div>
+                <div class = "footer__linkList">
+                    <a href = "#">Careers</a>
+                    <a href = "#">Support</a>
+                    <a href = "#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class = "footer__button">
+                <button class = "button">Request Invite</button>
+                <p>&copy; Easybank. All Rights Reserved</p>
+            </div>
+        </div>
     </footer>
 </body>
+
+<script src = "./script.js"></script>
+
 </html>

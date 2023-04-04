@@ -1,39 +1,38 @@
 .section1 {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "txt img";
-
+    display: flex;
     overflow: hidden;
-    background-color: aqua;
+    background-color: $primaryBgColor;
+
+    &__container {
+        width: 50%;
+    }
 
     &__textDiv { 
-        grid-area: "txt";
         width: 68%;
-        height: fit-content;
         margin: 20% 20%;
-
-        h1 {
-            font-size: max(3.5vw, 24px);
-            font-weight: 400;
-            margin-bottom: 20px;
-            color: $tertiaryColor;
-        }
-        
-        p {
-            font-size: 16px;
-            font-weight: 300;
-            margin-bottom: 30px;
-            color: $textColor;
-        }
+    }
+    
+    &__title {
+        font-size: max(3.5vw, 24px);
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 20px;
+        color: $tertiaryColor;
+    }
+    
+    &__text {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        color: $textColor;
     }
 
     &__imageDiv {
-        grid-area: "img";
         position: relative;
         width: 155%;
         height: fit-content;
-        top: -25%;
+        margin-top: -35%;
+        top: -10%;
         left: -4%;
     }
 
@@ -47,5 +46,31 @@
         top: 50%;
         left: 50%;
         transform: translate(-57%, -40%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section1 {
+        flex-direction: column-reverse;
+
+        &__container {
+            width: 100%;
+        }
+
+        &__textDiv {
+            width: 90%;
+            margin: 10% auto;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__imageDiv {
+            width: 150%;
+            height: initial;
+            margin: -45% 0 0 -14.5%;
+        }
     }
 }
