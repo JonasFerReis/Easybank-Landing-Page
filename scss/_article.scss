@@ -7,8 +7,7 @@
         border-radius: 6px 6px 0px 0px;
     }
 
-    div {
-        // background-color: aqua;
+    &__textContent {
         width: 90%;
         margin: auto;
     }
@@ -31,5 +30,13 @@
         margin-top: 0.8em;
         font-size: 14px;
         color: $textColor;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+    &:hover &__title {
+        color: $secondaryColor;
     }
 }   

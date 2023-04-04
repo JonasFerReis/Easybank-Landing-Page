@@ -2,20 +2,18 @@
 
 function main() {
     const hamburger = document.querySelector("img.header__hamburger")
-    const modal = document.querySelector("dialog.header__fade")
+    const modal = document.querySelector("dialog.modal")
     
     let modalOpen = false
 
     hamburger.addEventListener("click", () => {
         if (modalOpen === false) {
-            // modal.setAttribute("open", true)
-            modal.classList.toggle("header__fade--hidden")
+            modal.classList.toggle("modal--hidden")
             hamburger.setAttribute("src", "./images/icon-close.svg")
             modalOpen = true
         }
         else {
-            // modal.removeAttribute("open")
-            modal.classList.toggle("header__fade--hidden")
+            modal.classList.toggle("modal--hidden")
             hamburger.setAttribute("src", "./images/icon-hamburger.svg")
             modalOpen = false
         }
