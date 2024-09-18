@@ -1,4 +1,4 @@
-# Frontend Mentor - Easybank landing page solution
+# Easybank landing page
 
 ## Sumário
 
